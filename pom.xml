@@ -6,8 +6,8 @@
 
     <groupId>ru.shcheglov</groupId>
     <artifactId>sandbox</artifactId>
-    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
 
     <modules>
         <module>patterns</module>
