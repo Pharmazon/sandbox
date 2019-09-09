@@ -1,6 +1,6 @@
 package ru.shcheglov.creational.builder.lombok;
 
-import lombok.*;
+import lombok.Builder;
 
 @Builder
 public class Hero {

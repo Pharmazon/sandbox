@@ -11,6 +11,8 @@
 
     <modules>
         <module>patterns</module>
+        <module>serializers</module>
+        <module>jsoup-parser</module>
     </modules>
 
     <properties>

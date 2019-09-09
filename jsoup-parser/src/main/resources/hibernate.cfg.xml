@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="connection.url">jdbc:postgresql://localhost:5432/avitoparser</property>
+        <property name="connection.driver_class">org.postgresql.Driver</property>
+        <property name="connection.username">postgres</property>
+        <property name="connection.password">postgre</property>
+        <!--<property name="dialect">org.hibernate.dialect.PostgreSQL95Dialect</property>-->
+        <property name="show_sql">true</property>
+
+        <!--<property name="connection.pool_size">1</property>-->
+        <!--<property name="cache.provider_class">org.hibernate.cache.internal.NoCacheProvider</property>-->
+
+        <!-- DB schema will be updated if needed -->
+        <property name="hbm2ddl.auto">create</property>
+
+        <!-- Enable Hibernate's automatic session context management -->
+        <!--<property name="current_session_context_class">thread</property>-->
+
+        <!--<mapping resource="ru/alexeyshcheglov/parser/entity/HouseType.hbm.xml" />-->
+        <!--<mapping resource="ru/alexeyshcheglov/parser/entity/ResidentialName.hbm.xml" />-->
+        <!--<mapping resource="ru/alexeyshcheglov/parser/entity/Agency.hbm.xml" />-->
+        <!--<mapping resource="ru/alexeyshcheglov/parser/entity/Seller.hbm.xml" />-->
+        <mapping resource="ru/alexeyshcheglov/parser/entity/District.hbm.xml" />
+        <mapping resource="ru/alexeyshcheglov/parser/entity/DistrictType.hbm.xml" />
+        <!--<mapping resource="ru/alexeyshcheglov/parser/entity/Address.hbm.xml" />-->
+        <!--<mapping resource="ru/alexeyshcheglov/parser/entity/Region.hbm.xml" />-->
+
+        <!--<mapping class="ru.alexeyshcheglov.parser.entity.Street"/>-->
+        <!--<mapping class="ru.alexeyshcheglov.parser.entity.StreetType"/>-->
+        <mapping class="ru.alexeyshcheglov.parser.entity.City"/>
+        <mapping class="ru.alexeyshcheglov.parser.entity.CityType"/>
+    </session-factory>
+</hibernate-configuration>
