@@ -1,4 +1,6 @@
 package ru.shcheglov.structural.proxy;
 
-public class Role {
+public enum BankAccounts {
+
+    Manager;
 }
